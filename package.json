@@ -1,0 +1,18 @@
+{
+  "name": "nodejsmongodblog",
+  "version": "1.0.0",
+  "description": "WebApp for Login use nodejs and mongodb",
+  "main": "nodejsmongodblog.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "git repository":"https://github.com/miaoj000/nodejsmongodblog"
+  ,
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "login"
+  ],
+  "author": "miaoj000",
+  "license": "GNU"
+}

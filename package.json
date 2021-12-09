@@ -6,13 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "git repository":"https://github.com/miaoj000/nodejsmongodblog"
-  ,
+  "git repository": "https://github.com/miaoj000/nodejsmongodblog",
   "keywords": [
     "nodejs",
     "mongodb",
     "login"
   ],
   "author": "miaoj000",
-  "license": "GNU"
+  "license": "GNU",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

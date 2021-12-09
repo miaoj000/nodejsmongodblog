@@ -32,10 +32,10 @@
     <!-- <p><a href="/href/testhref.html">超链接href</a></p>
     <p><a href="/href2/html2.html">超链接href2</a></p> -->
     <p>first form:</p>
-    <form name="myForm" onsubmit="return validateForm()" action="/input" method="POST">
+    <form name="myForm" onsubmit="return validateForm()" action="/input" method="GET">
         操作数1：<input type="text" name="num1"><br>操作数2：<input type="text" name="num2"><br>
-        <input type="submit" value="写入" name="sub">
-        <input type="submit" value="读取" name="sub">
+        <input type="submit" value="write" name="sub">
+        <input type="submit" value="read" name="sub">
     </form>
     <!-- <h6 id='result' style="display:none">计算结果是:<%=result%></h6>
     <script>
@@ -48,13 +48,13 @@
             ele.style.display = 'block'
         }
     </script> -->
-    // <p>second form:</p>
+    <!-- // <p>second form:</p>
     // <form name="myFormGET" onsubmit="return validateForm()" action="/input" method="GET">
     //     操作数1：<input type="text" name="num1"><br>操作数2：<input type="text" name="num2"><br>
     //     <input type="submit" value="+" name="sub">
     //     <input type="submit" value="-" name="sub">
     //     <input type="submit" value="*" name="sub">
     //     <input type="submit" value="/" name="sub">
-    // </form>
+    // </form> -->
 </body>
 </html>

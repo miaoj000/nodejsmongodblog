@@ -15,6 +15,7 @@
   "author": "miaoj000",
   "license": "GNU",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "mongoose": "^6.1.0"
   }

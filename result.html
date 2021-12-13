@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            var x = document.forms["myFormGET"]["num1"].value;
+            var y = document.forms["myFormGET"]["num2"].value;
+            //console.log(typeof(parseInt(x)))
+            //if (x == null || typeof(x)!==Number) {
+            str1 = x.split("")
+            str2 = y.split("")
+            for (i = 0;i < x.length;i++){
+                if(parseFloat(str1[i]).toString()==='NaN'){
+                    alert("请输入数字。");
+                    return false;
+                }
+            }
+            for (i = 0;i < y.length;i++){
+                if(parseFloat(str2[i]).toString()==='NaN'){
+                    alert("请在第二个框输入数字。");
+                    return false;
+                }
+            }
+        }
+        </script>
+</head>
+<body>
+    <!-- <p><a href="/href/testhref.html">超链接href</a></p>
+    <p><a href="/href2/html2.html">超链接href2</a></p> -->
+    <h5>190110910520</h5>
+    <p>first form:</p>
+    <form name="myForm" onsubmit="return validateForm()" action="/input" method="GET">
+        操作数1：<input type="text" name="num1"><br>操作数2：<input type="text" name="num2"><br>
+        <input type="submit" value="write" name="sub">
+        <input type="submit" value="read" name="sub">
+    </form>
+    <p><%= returnVal %></p>
+    <!-- <h6 id='result' style="display:none">计算结果是:<%=result%></h6>
+    <script>
+        var url=window.location.href
+        routertemp = url.split("/")[3]
+        router = routertemp.split("?")[0]
+        alert(router)
+        if(router==='input'){
+            var ele = document.getElementById('result')
+            ele.style.display = 'block'
+        }
+    </script> -->
+    <!-- // <p>second form:</p>
+    // <form name="myFormGET" onsubmit="return validateForm()" action="/input" method="GET">
+    //     操作数1：<input type="text" name="num1"><br>操作数2：<input type="text" name="num2"><br>
+    //     <input type="submit" value="+" name="sub">
+    //     <input type="submit" value="-" name="sub">
+    //     <input type="submit" value="*" name="sub">
+    //     <input type="submit" value="/" name="sub">
+    // </form> -->
+</body>
+</html>

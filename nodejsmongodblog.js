@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/test1')
+mongoose.connect('mongodb://172.21.2.236/190110910520')
 const schema = {first:Number, second:Number}
 const nums = mongoose.model('nums', schema)
 app.use('/',express.static('public'))
